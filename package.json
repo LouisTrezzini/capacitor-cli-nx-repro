@@ -5,5 +5,8 @@
   "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "capacitor:sync:before": "node -e \"console.log('XX ROOT hook ran (workspace root package.json) -- cwd=' + process.cwd())\""
+  }, 
+  "devDependencies": {
+    "nx": "23.1.0"
   }
 }

@@ -3,7 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "capacitor:sync:before": "node ./hooks/app-sync-before.js"
+    "capacitor:sync:before": "node ./hooks/app-sync-before.js",
+    "sync": "cap sync"
   },
   "dependencies": {
     "@capacitor/core": "^8.4.2",

@@ -30,8 +30,7 @@ where it ran from, so it's obvious at a glance which one actually executed.
 
 ```sh
 npm install
-cd apps/mobile
-npx cap sync web
+npx nx run mobile:sync
 ```
 
 (`web` is used so the repro needs no Android/iOS SDKs — see "Why `sync web`" below.)
@@ -51,8 +50,8 @@ Two distinct lines, one from the app's own hook and one from the plugin's own ho
 ## Actual output
 
 ```
-XX ROOT hook ran (workspace root package.json) -- cwd=/Users/louist/feedly/capacitor-cli-nx-repro/apps/mobile
-XX ROOT hook ran (workspace root package.json) -- cwd=/Users/louist/feedly/capacitor-cli-nx-repro/packages/example-plugin
+XX ROOT hook ran (workspace root package.json) -- cwd=/Users/louist/capacitor-cli-nx-repro/apps/mobile
+XX ROOT hook ran (workspace root package.json) -- cwd=/Users/louist/capacitor-cli-nx-repro/packages/example-plugin
 ✔ copy web in 1.42ms
 ✔ update web in 870.08μs
 [info] Sync finished in 0.195s
