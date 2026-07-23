@@ -1,0 +1,9 @@
+{
+  "name": "capacitor-cli-nx-repro",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "capacitor:sync:before": "node -e \"console.log('XX ROOT hook ran (workspace root package.json) -- cwd=' + process.cwd())\""
+  }
+}

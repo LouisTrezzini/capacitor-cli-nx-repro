@@ -1,0 +1,15 @@
+{
+  "name": "mobile",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "capacitor:sync:before": "node ./hooks/app-sync-before.js"
+  },
+  "dependencies": {
+    "@capacitor/core": "^8.4.2",
+    "example-plugin": "*"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.4.2"
+  }
+}

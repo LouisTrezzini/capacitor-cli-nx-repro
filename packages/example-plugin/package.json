@@ -1,0 +1,13 @@
+{
+  "name": "example-plugin",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "capacitor": {
+    "ios": { "src": "ios" },
+    "android": { "src": "android" }
+  },
+  "scripts": {
+    "capacitor:sync:before": "node ./hooks/plugin-sync-before.js"
+  }
+}
